@@ -1,0 +1,169 @@
+/* src/app/todo/todo.component.css */
+
+.todo-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .add-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add-task input,
+  input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .add-task button,
+  button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-task button:hover {
+    background-color: #218838;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list li.completed span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task-list .delete-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-list .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  ::ng-deep .mat-autocomplete-panel {
+    max-height: 100px; /* Adjust the maximum height */
+    overflow-y: auto; /* Add vertical scrolling if the options exceed the max height */
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Style for the task list container */
+  .task-list {
+    list-style-type: none; /* Removes default list bullets */
+    padding: 0;
+    margin: 0;
+    max-width: 600px; /* Optional: limit max width for better readability */
+    margin: 0 auto; /* Centers the list horizontally */
+  }
+  
+  /* Style for each task item */
+  .task-list li {
+    display: flex;
+    align-items: center; /* Vertically centers the checkbox and text */
+    justify-content: space-between; /* Space between checkbox, task, and delete button */
+    padding: 10px 15px; /* Add padding for spacing between items */
+    border-bottom: 1px solid #ddd; /* Light border for separation between tasks */
+    background-color: #fff; /* Ensure background color for clarity */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .task-list li.completed {
+    background-color: #e0f7fa; /* Light blue background when completed */
+    text-decoration: line-through; /* Strike-through text for completed tasks */
+    opacity: 0.6; /* Make completed tasks a bit lighter */
+  }
+  
+  /* Style for the task text */
+  .task-list li span {
+    flex-grow: 1; /* Ensures the task text takes as much space as possible */
+    font-size: 16px; /* Adjust font size for readability */
+    padding-left: 10px; /* Add space between checkbox and task text */
+    transition: color 0.3s ease; /* Smooth color transition when completed */
+  }
+  
+  /* Style for the delete button */
+  .delete-btn {
+    background-color: #ff4d4d; /* Red background for the delete button */
+    color: white; /* White text for contrast */
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff3333; /* Darker red when hovering over delete button */
+  }
+  
+  /* Checkbox styling */
+  .task-list li input[type="checkbox"] {
+    width: 20px; /* Size of the checkbox */
+    height: 20px;
+    margin-right: 15px; /* Space between checkbox and task text */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Smooth transform when checked */
+  }
+  
+  .task-list li input[type="checkbox"]:checked {
+    transform: scale(1.2); /* Slightly enlarge the checkbox when checked */
+    background-color: #4caf50; /* Green color for checked */
+  }
+  
+  /* Hover effect for task items */
+  .task-list li:hover {
+    background-color: #f4f4f4; /* Light background on hover */
+  }
+  
