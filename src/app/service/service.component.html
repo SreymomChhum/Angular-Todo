@@ -1,1 +1,32 @@
-<p>service works!</p>
+<div class="container-fluid text-center">
+  <h2>Our Service Release</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 d-flex justify-content-center pt-4" *ngFor="let service of services">
+      <mat-card class="example-card w-100 fixed-height-card" appearance="outlined">
+        <img mat-card-image class="card-image" [src]="service.imageUrl" alt="{{ service.title }}">
+        <mat-card-header>
+          <mat-card-title>{{ service.title }}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+          <p>
+            {{ (shorten[service.id] ? service.description : (service.description | slice: 0: 100) + '...') }}
+          </p>
+        </mat-card-content>
+        <div class="d-flex justify-content-between p-2">
+          <a href="#" class="see-more-link" (click)="toggleDescription(service.id, $event)">
+            {{ shorten[service.id] ? 'See Less' : 'See More' }}
+          </a>
+          <mat-card-actions>
+            <button mat-button class="fs-12" >LIKE</button>
+            <button mat-button  class="fs-12">SHARE</button>
+          </mat-card-actions>
+        </div>
+
+      </mat-card>
+    </div>
+  </div>
+</div>

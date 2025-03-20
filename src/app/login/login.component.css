@@ -66,18 +66,6 @@
     color: #888;
   }
   
-  .task-list .delete-btn {
-    padding: 5px 10px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .task-list .delete-btn:hover {
-    background-color: #c82333;
-  }
   
   .example-form {
     min-width: 150px;
