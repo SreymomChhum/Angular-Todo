@@ -32,7 +32,7 @@ export class ServiceComponent {
       id:3,
       title: 'Bontub - Property Management System',
       description: 'The Bontub Property Management System facilitates comprehensive oversight for managers enabling meticulous control overall operationa facets associated with apartments and Borey.',
-      imageUrl: 'https://www.polygram-solutions.com/_next/static/media/project-img-06.111e2cd3.svg',
+      imageUrl: 'https://www.polygram-solutions.com/_next/static/media/project-img-05.445952e2.svg',
       traits: ['brave', 'loyal', 'strong']
     },
     { 

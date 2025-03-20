@@ -71,8 +71,8 @@ export class LoginComponent implements OnInit {
       console.log('Login successful!');
       this.loggedIn = true; // Set loggedIn flag to true
 
-      // Redirect to the /product page upon successful login
-      this.router.navigate(['/product']);
+      // Redirect to the /home page upon successful login
+      this.router.navigate(['/home']);
     } else {
       console.log('Invalid credentials');
       this.loggedIn = false; // Set loggedIn flag to false
